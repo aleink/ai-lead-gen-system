@@ -62,7 +62,9 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
+ITEM_PIPELINES = {
+    'realestate_scraper.pipelines.PostgresPipeline': 300,
+}
 #    "realestate_scraper.pipelines.RealestateScraperPipeline": 300,
 #}
 
