@@ -47,8 +47,9 @@ CONCURRENT_REQUESTS_PER_DOMAIN = 2
 # ---------------------------------------------------------------------------
 # We use the PostgresPipeline to store scraped data in PostgreSQL
 ITEM_PIPELINES = {
-    "realestate_scraper.pipelines.PostgresPipeline": 300,
+    "project.pipelines.PostgresPipeline": 300,
 }
+
 
 # ---------------------------------------------------------------------------
 # Other Default Scrapy Settings (Optional to keep or remove)
